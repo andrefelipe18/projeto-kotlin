@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.notifications.NotificationsFragment">
+
+    <GridLayout
+        android:id="@+id/gridLayoutMonths"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:columnCount="3"
+        android:rowCount="4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/buttonJanuary"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:text="Janeiro" />
+
+        <Button
+            android:id="@+id/buttonFebruary"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:text="Fevereiro" />
+
+        <Button
+            android:id="@+id/buttonMarch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:text="Março" />
+
+        <Button
+            android:id="@+id/buttonApril"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:text="Abril" />
+
+        <Button
+            android:id="@+id/buttonMay"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:text="Maio" />
+
+        <Button
+            android:id="@+id/buttonJune"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:text="Junho" />
+
+        <Button
+            android:id="@+id/buttonJuly"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:text="Julho" />
+
+        <Button
+            android:id="@+id/buttonAugust"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:text="Agosto" />
+
+        <Button
+            android:id="@+id/buttonSeptember"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:text="Setembro" />
+
+        <Button
+            android:id="@+id/buttonOctober"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:text="Outubro" />
+
+        <Button
+            android:id="@+id/buttonNovember"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:text="Novembro" />
+
+        <Button
+            android:id="@+id/buttonDecember"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:text="Dezembro" />
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/textViewTotalGasto"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Valor total gasto no mês: 0.0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/gridLayoutMonths" />
+
+    <TextView
+        android:id="@+id/textViewMediaQuilometragem"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="Média de quilometragem por manutenção: 0.0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewTotalGasto" />
+
+    <ListView
+        android:id="@+id/listViewManutencoes"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMediaQuilometragem"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
